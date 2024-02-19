@@ -18,7 +18,7 @@ app.get('/', function (req, res) {
 
 /* ---- LUMINA ROUTING ---- */
 app.get('/lumina/summarize', (req, res) =>{
-    res.render('/lumina/landing.html', {
+    res.render('lumina/landing.html', {
         response: false
     });
 });
@@ -28,7 +28,7 @@ app.post('/lumina/summarize', async (req, res) =>{
     const content = req.body.input;
     const summary = await gptSummary(context, content);
 
-    res.render('/lumina/landing.html', {
+    res.render('lumina/landing.html', {
         response: summary
     });
 });
