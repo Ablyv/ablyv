@@ -9,7 +9,6 @@ const port = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use('/static/', express.static("./static"));
-app.use('/lumina/summarize');
 app.engine('html', ejs.renderFile);
 
 app.get('/', function (req, res) {
