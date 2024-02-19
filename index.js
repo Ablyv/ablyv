@@ -1,10 +1,16 @@
 const express = require('express');
+const ejs = require('ejs');
+
 const app = express();
 
 const port = process.env.PORT || 3000;
 
+app.use(express.urlencoded({ extended: true }));
+app.use('/static/', express.static("./static"));
+app.engine('html', ejs.renderFile);
+
 app.get('/', function (req, res) {
-    res.send('Hello World!');
+    res.render('index.html');
 });
 
 app.listen(port, function () {
