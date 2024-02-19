@@ -49,7 +49,7 @@ window.onload = function() {
         }
     }
     // INJECT CSS
-    var css = document.createElement("style");
+    let css = document.createElement("style");
     css.type = "text/css";
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
@@ -57,4 +57,4 @@ window.onload = function() {
 
 // Above Code sourced from @Simon Shahriveri on codepen //
 
-document.getElementsByClassName('fa-github')[0].addEventListener("click", function(e){location.href="https://github.com/Ablyv"});
+document.getElementsByClassName('fa-github')[0].addEventListener("click", function(){location.href="https://github.com/Ablyv"});
