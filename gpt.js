@@ -2,7 +2,7 @@ const ai = require('openai');
 
 async function gptSummary(context, content){
     const openai = new ai.OpenAI({
-        apiKey: process.env.OPENAI_API_KEY
+        apiKey: "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"
     });
 
     const chatCompletion = await openai.chat.completions.create({
