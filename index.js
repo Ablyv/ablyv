@@ -19,12 +19,20 @@ app.get('/', function (req, res) {
 
 
 /* ---- LUMINA ROUTING ---- */
-app.get('/lumina', function (req, res){
+app.get('/lumina/summarize', function (req, res){
     res.render('lumina/landing.html', {
         response: false
     })
 });
 
+app.post('/lumina/summarize', async (req, res) => {
+    const context = "you must summarize the following text in a concise way. Do not include any extraneous information or add any additional information";
+    const content = req.body.input;
+    const summary = await gptSummary(context, content);
+    res.render('lumina/landing.html', {
+        response: summary
+    })
+});
 app.listen(port, function () {
     console.log(`Example app listening on port ${port}!`);
 });
