@@ -2,7 +2,10 @@
   "name": "ablyv",
   "version": "1.0.0",
   "description": "",
-  "run": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "main": "index.js",
   "dependencies": {
     "abort-controller": "^3.0.0",
     "agentkeepalive": "^4.5.0",
