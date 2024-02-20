@@ -12,13 +12,15 @@ app.use('/static/', express.static("./static"));
 app.engine('html', ejs.renderFile);
 
 app.get('/', function (req, res) {
-    res.render('views/index.html');
+    res.render('index.html');
 });
 
 
 /* ---- LUMINA ROUTING ---- */
 app.get('/lumina', function (req, res){
-   res.render('views/index.html')
+   res.render('lumina/landing.html', {
+       response: false
+   })
 });
 
 app.listen(port, function () {
