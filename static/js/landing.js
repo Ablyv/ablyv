@@ -1,60 +1,46 @@
-var TxtType = function(el, toRotate, period) {
-    this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
-    this.txt = '';
-    this.tick();
-    this.isDeleting = false;
-};
+const trailer = document.getElementById('follow');
 
-TxtType.prototype.tick = function() {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
+window.onmousemove = e =>{
+    const x = e.clientX - trailer.offsetWidth / 2;
+    const y = e.clientY - trailer.offsetWidth / 2;
 
-    if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-    }
+    const keyframes = {
+        transform: `translate(${x}px, ${y}px)`
+    } // tracer
 
-    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    trailer.animate(keyframes, {
+        duration: 800,
+        fill: 'forwards'
+    });
+}
 
-    var that = this;
-    var delta = 150 - Math.random() * 100;
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    if (this.isDeleting) { delta /= 2; }
+let interval = null;
 
-    if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-    }
+document.getElementById("movereffect").onmouseover = event => {
+    let iteration = 0;
 
-    setTimeout(function() {
-        that.tick();
-    }, delta);
-};
+    clearInterval(interval);
 
-window.onload = function() {
-    var elements = document.getElementsByClassName('typewrite');
-    for (var i=0; i<elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-            new TxtType(elements[i], JSON.parse(toRotate), period);
+    interval = setInterval(() => {
+        event.target.innerText = event.target.innerText
+            .split("")
+            .map((letter, index) => {
+                if(index < iteration) {
+                    return event.target.dataset.value[index];
+                }
+
+                return letters[Math.floor(Math.random() * 26)]
+            })
+            .join("");
+
+        if(iteration >= event.target.dataset.value.length){
+            clearInterval(interval);
         }
-    }
-    // INJECT CSS
-    let css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-    document.body.appendChild(css);
-};
 
-// Above Code sourced from @Simon Shahriveri on codepen //
-
-document.getElementsByClassName('fa-github')[0].addEventListener("click", function(){location.href="https://github.com/Ablyv"});
+        iteration += 1 / 3;
+    }, 30);
+    document.getElementById('movereffect').innerHTML = 'ACTIONS NOT WORDS';
+    // Fix if keeping mouse on text!
+}

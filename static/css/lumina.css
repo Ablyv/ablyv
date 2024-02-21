@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pixelify+Sans:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sometype+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+:root{
+    --bg-gray: #111821;
+    --main-red: #8E3943;
+    --tan: #E4D6A7;
+    --off-gray: #8390A5;
+    --light-gray: #D5DBDB;
+}
+
+body{
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+.title-container{
+    margin: 10px;
+}
+
+.aurora-texture {
+    margin: 50px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.texture-text {
+    font-size: 120px;
+    line-height: 120px;
+    display: inline;
+}
+
+.aurora-texture h2 {
+    font-size: 54px;
+    color: white;
+    font-family: 'Sometype Mono', sans-serif;
+    display: inline;
+}
+
+.introducing{
+    font-family: 'Sometype Mono', sans-serif !important;
+}
+
+.aurora-texture h3{
+    font-size: 42px;
+    line-height: 41px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    display: inline;
+}
+
+.aurora-texture {
+    background-clip: text;
+    color: transparent !important;
+    background-image: url('../img/aurora.jpg');
+}
+
+.masked-copy p {
+    display: inline;
+}
+
+.masked-copy h2 {
+    color: white;
+    display: inline;
+    font: inherit;
+}
+
+.masked-copy {
+    background-clip: text;
+    color: transparent !important;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        margin-top: -20px;
+    }
+    50% {
+        opacity: 1;
+        margin-top: 0;
+    }
+    100%{
+        opacity: 0;
+        margin-top: 20px;
+    }
+}
+
+span.anim {
+    color: #8390A5;
+    position: absolute;
+    animation: fadein 4s infinite;
+    font-weight: 300;
+    font-size: 52px;
+}
+
+.desc{
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    margin-right: 50px;
+}
+
+.box-container{
+    float: right;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    width: 16vw;
+    height: 40vh;
+    text-align: center;
+    z-index: 2;
+    background-color: #e1d9d9;
+    border: 1px solid #333333;
+    border-radius: 0.2rem;
+}
+
+.box-container h2{
+
+}
+
+.box-container a:first-of-type{
+    margin-top: 15px;
+}
+
+.box-container a{
+    width: 50%;
+    margin-left: calc(25% - 16px);
+    text-decoration: none;
+    border-radius: 0.2rem;
+    display: block;
+    background-color: var(--main-red);
+    padding: 8px 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.box {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 198px;
+
+}
+.box:before {
+    position: absolute;
+    content: '';
+    width: 100vw;
+    height: 198px;
+    filter: blur(0);
+    opacity: 1;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.box:before{
+    background-image:
+            url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='198'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='-10.959%25' y2='100%25'%3e%3cstop stop-color='%23F2527D' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='%23F2527D' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' fill-rule='evenodd' d='M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z'/%3e%3c/svg%3e"),
+            url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='198'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='-10.959%25' y2='100%25'%3e%3cstop stop-color='%23F2527D' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='%23F2527D' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' fill-rule='evenodd' d='M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z'/%3e%3c/svg%3e"),
+            url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='198'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='-10.959%25' y2='100%25'%3e%3cstop stop-color='%23F2527D' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='%23F2527D' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' fill-rule='evenodd' d='M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z'/%3e%3c/svg%3e");
+    background-repeat: repeat-x;
+    background-size: 1600px 50%;
+    background-position: 0 130%, -50px 130%, 500px 130%;
+
+    animation: 20s waves linear infinite forwards;
+}
+
+@keyframes waves {
+    to {
+        background-position: 1600px 130%, 3150px 130%, 5300px 130%;
+    }
+}
