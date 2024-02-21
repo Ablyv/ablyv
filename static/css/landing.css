@@ -41,7 +41,7 @@ body:hover > #follow {
 }
 
 .hero-container{
-    background-image: url('https://ablyv-dev-azurewebsites.net/static/css/images/noise-light.png');
+    background-image: url('../images/noise-light.png');
     position: relative;
     overflow: hidden;
     display: flex;
