@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/product.css" />
+    <script defer src="../static/js/product.js"></script>
+</head>
+<body>
+<%- include('./includes/topnav.html') %>
+
+<div class="ablyv-hero-container">
+    <h3 id="tagline">for developers with a team</h3>
+
+    <h1 id="headline">Develop on your terms.</h1>
+    <h3 id="featurelist">
+        For every team there's the
+        <span>
+          <a
+                  href=""
+                  class="typewrite"
+                  data-period="2000"
+                  data-type='[ " prototyper", " communicator", " designer", " developer", " manager", " data scientist" ]'
+          >
+            <span class="wrap"></span>
+          </a>
+        </span>
+    </h3>
+
+    <p id="explanation">
+        Actium revolutionizes your team workflow with every tool all in one
+        place accessible by everyone.
+    </p>
+    <a href="actium/getstarted" class="getstarted-btn"
+    >Get Started <i class="fa-solid fa-arrow-right right-arrow"></i
+    ></a>
+</div>
+
+<div class="product-container">
+    <div class="product-card">
+        <h2>Actium</h2>
+        <p>A new way to team.</p>
+        <a href="/actium" class="product-button">Learn More</a>
+    </div>
+
+    <div class="product-card">
+        <h2>Lumina</h2>
+        <p>Better how you learn and study.</p>
+        <a href="/lumina" class="product-button">Learn More</a>
+    </div>
+
+    <div class="product-card">
+        <h2>Unnamed</h2>
+        <p>The best way to debate (and speech).</p>
+        <a href="/unnamed" class="product-button">Learn More</a>
+    </div>
+</div>
+
+<div class="mission-container">
+    <h4 class="tag">from scratch</h4>
+    <h2 class="mission-tagline">A simple evolution to teams</h2>
+    <p class="mission-desc">
+        We've made the process of working with a team so much simpler, now it's
+        a breeze. All with Actium.
+    </p>
+
+    <div class="pricing-container">
+        <div class="smallbusiness-container">
+            <h1 class="pricing-title">
+                <span class="pricing-title-top">Actium</span>For Small Business
+            </h1>
+            <a href="#" class="pricing-btn">Get Started <i class="fa-solid fa-arrow-right right-arrow"></i></a>
+        </div>
+        <div class="enterprise-container">
+            <h1 class="pricing-title">
+                <span class="pricing-title-top">Actium</span>For Enterprise
+            </h1>
+            <a href="#" class="pricing-btn">Get Started <i class="fa-solid fa-arrow-right right-arrow"></i></a>
+        </div>
+    </div>
+</div>
+
+<%- include('./includes/footer.html') %>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<style>
+    .topnav-container{
+        top: 0;
+        background-image: url('https://ablyv-dev.azurewebsites.net/static/images/noise-light.png');
+        position: fixed;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 10vh;
+        z-index: 999999999999999999;
+        background-color: #000;
+        border-bottom: 1px solid #333;
+    }
+
+    .topnav-button-container{
+        margin-left: auto;
+    }
+
+    .topnav-button{
+        margin-right: 2vw;
+        padding: 8px 16px;
+        outline: none;
+        font-size: 16px;
+        border-radius: 0.4rem;
+        font-weight: 500;
+        color: #fff;
+        text-decoration: none;
+        border: 2px solid #fff;
+        transition: 0.4s;
+    }
+
+    .topnav-login{
+        border: 2px solid #E74C3C;
+    }
+
+    .topnav-button:hover{
+        background-color: #fff;
+        color: #000;
+    }
+
+    .topnav-login:hover{
+        color: #fff;
+        background-color: #E74C3C;
+    }
+
+    .topnav-search{
+        background-color: #121314;
+        padding: 8px 12px;
+        width: 300px;
+        font-size: 14px;
+        border-radius: 0.3rem;
+        border: 1px solid #333;
+        outline: none;
+        transition: 0.4s;
+        color: #fff;
+        margin: 0 10px;
+        font-weight: 600;
+    }
+
+    .topnav-search:focus{
+        border: 1px solid #4D6CFA;
+    }
+
+    .topnav-logo{
+        margin: 0 1vw;
+        width: 50px;
+        height: 50px;
+        transition: 0.4s;
+    }
+
+    .topnav-logo:hover{
+        background-color: var(--bg-gray);
+        cursor: pointer;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+</style>
+
+<div class="topnav-container">
+    <img src='https://ablyv-dev.azurewebsites.net/static/images/nobglogo.png' alt="logo" class="topnav-logo" />
+
+    <input class="topnav-search" id="topnav-search" placeholder="[TYPE /] To Search">
+
+    <div class="topnav-button-container">
+        <a href="/launch" class="topnav-button">Get Started</a>
+        <a href="/login" class="topnav-button topnav-login">Login</a>
+    </div>
+</div>

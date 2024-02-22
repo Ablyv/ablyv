@@ -17,6 +17,10 @@ app.get('/', function (req, res) {
     res.render('index.html');
 });
 
+app.get('/products', (req, res) =>{
+    res.render('product.html');
+});
+
 
 /* ---- LUMINA ROUTING ---- */
 app.get('/lumina/summarize', function (req, res){

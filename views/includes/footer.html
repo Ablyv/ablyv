@@ -1,0 +1,143 @@
+<style>
+    .footer-container{
+        background-color: #121314;
+        background-image: url('https://ablyv-dev.azurewebsites.net/static/images/noise-light.png');
+        width: 100vw;
+        height: 55vh;
+    }
+
+    .footer{
+        height: 45vh;
+        background-color: #1C1D22;
+        width: 90vw;
+        margin: 5vh 5vw;
+        display: inline-block;
+        z-index: 10000;
+        position: absolute;
+        border-radius: 0.4rem;
+    }
+
+    .newsletter-title{
+        color: #fff;
+        margin: 10px 20px 0 20px;
+    }
+
+    .newsletter-desc{
+        color: var(--off-gray);
+        margin: 10px 20px;
+    }
+
+    input[type="text"]{
+        background-color: #2C2E37;
+        padding: 8px 12px;
+        width: 300px;
+        font-size: 14px;
+        font-weight: 200;
+        border-radius: 0.3rem;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        margin: 10px 20px;
+    }
+
+    input[type="text"]:focus{
+        border: 1px solid #4D6CFA;
+    }
+
+    input[type="submit"]{
+        padding: 8px 16px;
+        outline: none;
+        font-size: 12px;
+        border: none;
+        border-radius: 30px;
+        font-weight: 500;
+        color: #000;
+        text-decoration: none;
+        margin-left: 20px;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    input[type="submit"]:hover{
+        filter: brightness(90%);
+    }
+
+    hr{
+        width: calc(100% - 20px);
+        margin-left: 10px;
+        position: absolute;
+        bottom: 50px;
+        background-color: #B2B2B2;
+        height: 1px;
+    }
+
+    .footer-legal-container{
+        bottom: 0;
+        position: absolute
+    }
+
+    .footer-legal-container{
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .footer-legal-container a{
+        display: inline-block;
+        color: var(--light-gray);
+        text-decoration: none;
+        margin-right: 5px;
+        font-weight: 300;
+    }
+
+    .copyright{
+        display: inline-block;
+    }
+
+    .footer-links{
+        display: inline-block;
+        bottom:0;
+        right:0;
+        position: absolute;
+        margin: 10px;
+    }
+
+    .link{
+        width: 24px;
+        height: 24px;
+        background-color: #3B3C42;
+        font-size: 24px;
+        padding: 2px;
+        border-radius: 0.2rem;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+</style>
+<div class="footer-container">
+    <div class="footer">
+        <div class="newsletter-container">
+            <h1 class="newsletter-title">Sign up for the Rehash</h1>
+            <p class="newsletter-desc">Everything Ablyv, all at one source. Accessible for <br>free, anywhere, every week</p>
+
+            <form method="POST">
+                <input type="text" placeholder="Enter email address..." />
+                <br>
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+
+        <div class="footer-footer-container">
+            <hr>
+            <div class="footer-legal-container">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <!-- <h6 class="copyright">&copy;2023 Ablyv inc. All rights reserved.</h6> -->
+            </div>
+
+            <div class="footer-links">
+                <i class="fa-brands fa-x-twitter link"></i>
+                <i class="fa-brands fa-github link"></i>
+            </div>
+        </div>
+    </div>
+</div>
