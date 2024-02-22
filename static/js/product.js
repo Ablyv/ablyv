@@ -60,3 +60,15 @@ document.addEventListener('keydown', (event) =>{
        document.getElementById('topnav-search').focus();
    }
 });
+
+const node = document.getElementById("topnav-search");
+node.addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
+        const path = window.location + '../search';
+        const params = new URLSearchParams(window.location.search);
+        const hash = window.location.hash;
+        params.set('search', node.value);
+        window.history.replaceState({}, '', `${path}?${params.toString()}${hash}`);
+
+    }
+});
