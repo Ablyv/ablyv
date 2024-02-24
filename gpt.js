@@ -9,7 +9,7 @@ async function gptSummary(context, content){
         model: "gpt-3.5-turbo",
         messages:[{"role": "system", "content": context}, {"role": "user", "content": content}],
     });
-    return chatCompletion.choices[0].message;
+    return chatCompletion.choices[0].message.content;
 }
 
 module.exports = gptSummary;
