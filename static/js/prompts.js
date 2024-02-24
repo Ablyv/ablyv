@@ -1,6 +1,6 @@
 const onload = () => {
     async function createCards() {
-        const response = await fetch(`http://localhost:3000/lumina/api/extemp/prompts/`);
+        const response = await fetch(`https://ablyv-dev.azurewebsites.net/lumina/api/extemp/prompts/`);
         const data = await response.json();
 
         // Assuming there is only one object in the array
