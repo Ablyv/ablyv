@@ -38,13 +38,13 @@ app.post('/lumina/summarize', async (req, res) => {
     })
 });
 
-app.get('/lumina/extemp/prompts', async (req, res) =>{
+app.get('/lumina/impromptu/prompts', async (req, res) =>{
     res.render('lumina/prompts.html')
 });
 
-app.get('/lumina/api/extemp/prompts', async (req, res) =>{
+app.get('/lumina/api/impromptu/prompts', async (req, res) =>{
     res.header("Content-Type",'application/json');
-    const context = "Pretend you must give three extemporaneous speaking prompts for a speech tournament";
+    const context = "Pretend you must give three impromptu speaking prompts for a NSDA speech tournament";
     const content =
         "Give 3 prompts please\n" +
         "                Do not include any explanations, only provide a  RFC8259 compliant JSON response  following this format without deviation MUST BE without new lines.\n" +
