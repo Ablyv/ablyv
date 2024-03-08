@@ -9,14 +9,14 @@ window.onmousemove = (event) => {
 
 const getApi = async (userPassword) => {
     try {
-        const response = await fetch(`/api`);
+        const response = await fetch(`https://ablyv-dev.azurewebsites.net/game/api`);
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
         const requirements = await response.json();
         loopedCheck(requirements, userPassword);
     } catch (error) {
-        console.error('Error fetching API:', error.message);
+        alert('Error fetching API:', error.message);
     }
 };
 
