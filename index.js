@@ -21,6 +21,15 @@ app.get('/products', (req, res) =>{
     res.render('product.html');
 });
 
+app.get('/game', (req, res) =>{
+    res.render('game.html');
+});
+
+app.get('/game/api', (req, res) =>{
+  res.header("Content-Type",'application/json');
+  const __dirname = path.resolve();
+  res.sendFile(path.join(__dirname, `reqs.json`));
+});
 
 /* ---- LUMINA ROUTING ---- */
 app.get('/lumina/summarize', function (req, res){
