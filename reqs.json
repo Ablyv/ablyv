@@ -1,0 +1,135 @@
+[
+  {
+    "solutions": [
+      "Alabama",
+      "Alaska",
+      "Arizona",
+      "Arkansas",
+      "California",
+      "Colorado",
+      "Connecticut",
+      "Delaware",
+      "Florida",
+      "Georgia",
+      "Hawaii",
+      "Idaho",
+      "Illinois",
+      "Indiana",
+      "Iowa",
+      "Kansas",
+      "Kentucky",
+      "Louisiana",
+      "Maine",
+      "Maryland",
+      "Massachusetts",
+      "Michigan",
+      "Minnesota",
+      "Mississippi",
+      "Missouri",
+      "Montana",
+      "Nebraska",
+      "Nevada",
+      "New Hampshire",
+      "New Jersey",
+      "New Mexico",
+      "New York",
+      "North Carolina",
+      "North Dakota",
+      "Ohio",
+      "Oklahoma",
+      "Oregon",
+      "Pennsylvania",
+      "Rhode Island",
+      "South Carolina",
+      "South Dakota",
+      "Tennessee",
+      "Texas",
+      "Utah",
+      "Vermont",
+      "Virginia",
+      "Washington",
+      "West Virginia",
+      "Wisconsin",
+      "Wyoming"
+    ],
+    "err": "Must include a United States, state."
+  },
+  {
+    "solutions": [
+      "ekiN",
+      "sadidA",
+      "snaV",
+      "esrevnoC",
+      "kobeeR",
+      "amuP",
+      "ecnalaBweN",
+      "ruomrArednU",
+      "srehcekS",
+      "scisA"
+    ],
+    "err": "Must include a shoe brand spelled backwards"
+  },
+  {
+    "solutions": [
+      "apple",
+      "orange",
+      "banana",
+      "grape",
+      "strawberry",
+      "watermelon",
+      "kiwi",
+      "pear",
+      "peach",
+      "plum"
+    ],
+    "err": "Must include a common fruit"
+  },
+  {
+    "solutions": [
+      "!",
+      "@",
+      "#",
+      "$",
+      "%",
+      "^",
+      "&",
+      "*",
+      "(",
+      ")",
+      "-",
+      "_",
+      "+"
+    ],
+    "err": "Must include a special character"
+  },
+  {
+    "solutions": [
+      "x^2"
+    ],
+    "err": "Must include a quadratic equation"
+  },
+  {
+    "solutions": [
+      "abcdefghijklmnopqrstuvwxyz", 
+      "zyxwvutsrqponmlkjihgfedcba"
+    ],
+    "err": "Must include the alphabet backwards"
+  },
+  {
+    "solutions": [
+      "metaphor",
+      "simile",
+      "hyperbole",
+      "personification",
+      "oxymoron",
+      "onomatopoeia"
+    ],
+    "err": "Must include a type of figurative language"
+  },
+  {
+    "solutions": [
+      "100000000"
+    ],
+    "err": "Must include the number 256 in binary"
+  }
+]
