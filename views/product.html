@@ -7,81 +7,153 @@
     <title>Document</title>
     <link rel="stylesheet" href="../static/css/product.css" />
     <script defer src="../static/js/product.js"></script>
+    <script src="https://kit.fontawesome.com/48e723b064.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<%- include('./includes/topnav.html') %>
+<div class="topnav-container">
+      <!-- <img src="/images/nobg-logo.png" alt="no background logo" id="topnav-logo" /> -->
 
-<div class="ablyv-hero-container">
-    <h3 id="tagline">for developers with a team</h3>
+      <div class="topnav-content">
+          <a href="/products" class="topnav-titles">Products</a>
+          <a href="/uses" class="topnav-titles">Use Cases</a>
+          <a href="/login" class="topnav-titles">Login</a>
+          <a href="/getstarted" class="topnav-button">Get Started</a>
+      </div>
+  </div>
 
-    <h1 id="headline">Develop on your terms.</h1>
-    <h3 id="featurelist">
-        For every team there's the
-        <span>
-          <a
-                  href=""
-                  class="typewrite"
-                  data-period="2000"
-                  data-type='[ " prototyper", " communicator", " designer", " developer", " manager", " data scientist" ]'
-          >
-            <span class="wrap"></span>
+  <div class="main-container">
+      <h3 id="tagline">for developers with a team</h3>
+
+      <h1 id="headline">Develop on your terms.</h1>
+      <h3 id="featurelist">For every team there's the <span>
+          <a href="" class="typewrite" data-period="2000" data-type='[ " prototyper", " communicator", " designer", " developer", " manager", " data scientist" ]'>
+              <span class="wrap"></span>
           </a>
-        </span>
-    </h3>
+      </span></h3>
 
-    <p id="explanation">
-        Actium revolutionizes your team workflow with every tool all in one
-        place accessible by everyone.
+      <p id="explanation">Actium revolutionizes your team workflow with every tool all in one place accessible by everyone.</p>
+      <a href="/getstarted" class="getstarted-btn">Get Started <i class="fa-solid fa-arrow-right right-arrow"></i></a>
+  </div>
+
+  
+  <div class="blog-container">
+    <h5><hr />empower everyone</h5>
+    <div class="blog-header">
+      <h1>Change Your Life With <br />New Found Simplicity</h1>
+    </div>
+
+    <div class="product-list">
+      <div class="product">
+        <h2 class="fa-solid fa-people-group ico"></h2>
+        <h1>
+          Actium, <br />
+          For Teams
+        </h1>
+        <p>We've made the process of working with a team so much simpler, now it's a breeze. All with Actium.</p>
+        <a href="#">Learn More &nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      
+      <div class="product">
+        <h2 class="fa-solid fa-landmark"></h2>
+        <h1>
+          Lumina, <br />
+          Speech & Debate
+        </h1>
+        <p>A free, open source way to enhance your speaking and debating, built for the High School league.</p>
+        <a href="#">Learn More &nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      
+      <div class="product">
+        <h2 class="fa-solid fa-seedling"></h2>
+        <h1>
+          Ablyv, <br />
+          IoT Simplicity
+        </h1>
+        <p>Change your life, with a new found simplicity with our Internet of Things products</p>
+        <a href="#">Learn More &nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+    <div class="abt-container">
+      <img src="https://ablyv-dev.azurewebsites.net/static/images/nobglogo.png" alt="no background logo" />
+      <div class="abt-content">
+        <h5><hr />about us</h5>
+        <h1>Shaping the Future, <br />In Effortless Ways</h1>
+        <p>
+          Emark on a new journey with us <span>@Ablyv</span>. We're going to change the world, a large bit at a time.
+          We strive to be mostly free and open sourcing our products, so that everyone can use them.
+        </p>
+        <h4>Join us, in changing your life with a new found simplicity.</h4>
+      </div>
+    </div>
+  
+  <div class="stats-container">
+    <p class="stats-text">
+      <span class="color">+</span>
+      <br />
+      <span class="desc">Open sourced projects.</span>
     </p>
-    <a href="actium/getstarted" class="getstarted-btn"
-    >Get Started <i class="fa-solid fa-arrow-right right-arrow"></i
-    ></a>
-</div>
-
-<div class="product-container">
-    <div class="product-card">
-        <h2>Actium</h2>
-        <p>A new way to team.</p>
-        <a href="/actium" class="product-button">Learn More</a>
-    </div>
-
-    <div class="product-card">
-        <h2>Lumina</h2>
-        <p>Better how you learn and study.</p>
-        <a href="/lumina" class="product-button">Learn More</a>
-    </div>
-
-    <div class="product-card">
-        <h2>Unnamed</h2>
-        <p>The best way to debate (and speech).</p>
-        <a href="/unnamed" class="product-button">Learn More</a>
-    </div>
-</div>
-
-<div class="mission-container">
-    <h4 class="tag">from scratch</h4>
-    <h2 class="mission-tagline">A simple evolution to teams</h2>
-    <p class="mission-desc">
-        We've made the process of working with a team so much simpler, now it's
-        a breeze. All with Actium.
+    <hr />
+    <p class="stats-text">
+      <span class="color">%</span>
+      <br />
+      <span class="desc">Satisfaction</span>
     </p>
+    <hr />
+    <p class="stats-text">
+      <span class="color">k</span>
+      <br />
+      <span class="desc">Revenue donated</span>
+    </p>
+    <hr />
+    <p class="stats-text">
+      <span class="color">/s</span>
+      <br />
+      <span class="desc">Requests</span>
+    </p>
+  </div>
+  
+  <div class="blog-container">
+    <h5><hr />blog</h5>
 
-    <div class="pricing-container">
-        <div class="smallbusiness-container">
-            <h1 class="pricing-title">
-                <span class="pricing-title-top">Actium</span>For Small Business
-            </h1>
-            <a href="#" class="pricing-btn">Get Started <i class="fa-solid fa-arrow-right right-arrow"></i></a>
-        </div>
-        <div class="enterprise-container">
-            <h1 class="pricing-title">
-                <span class="pricing-title-top">Actium</span>For Enterprise
-            </h1>
-            <a href="#" class="pricing-btn">Get Started <i class="fa-solid fa-arrow-right right-arrow"></i></a>
-        </div>
+    <div class="blog-header">
+      <h1>Insights and Perspectives</h1>
+
+      <div class="category-links">
+        <a href="#">All Categories</a>
+        <a href="#">User Stories</a>
+        <a href="#">Updates</a>
+        <a href="#">Feature Spotlights</a>
+        <a href="#">Products</a>
+      </div>
     </div>
-</div>
 
+    <div class="blog-content">
+      <div class="blog-post">
+        <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img" />
+        <p class="info"><i class="fa-regular fa-circle-user"></i>Jane Doe&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-calendar"></i>January 20, 2023</p>
+        <h2 class="title">Pro Tips for an Optimal User Experience</h2>
+        <a href="#">Learn More &nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="blog-post">
+        <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img" />
+        <p class="info"><i class="fa-regular fa-circle-user"></i>Jane Doe&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-calendar"></i>January 20, 2023</p>
+        <h2 class="title">Pro Tips for an Optimal User Experience</h2>
+        <a href="#">Learn More &nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="blog-post">
+        <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img" />
+        <p class="info"><i class="fa-regular fa-circle-user"></i>&nbsp;Jane Doe&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-calendar"></i>&nbsp;January 20, 2023</p>
+        <h2 class="title">Pro Tips for an Optimal User Experience</h2>
+        <a href="#">Learn More &nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  
 <%- include('./includes/footer.html') %>
 </body>
 </html>
