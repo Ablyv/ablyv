@@ -67,6 +67,10 @@ app.get('/lumina/api/impromptu/prompts', async (req, res) =>{
     res.send(summary);
 });
 
+app.get('/blog/thefirst', (req, res) =>{
+    res.render('blog/thefirst.html');
+});
+
 app.listen(port, function () {
     console.log(`Example app listening on port ${port}!`);
 });
